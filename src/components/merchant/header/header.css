@@ -1,0 +1,43 @@
+.header {
+    display: flex;
+    align-items: center;
+    padding-left: 55px;
+    padding-top: 24px;
+    position: absolute;
+    top: inherit;
+    left: inherit;
+    z-index: 10;
+}
+
+    .header .logo {
+        margin-right: 10px;
+        width: 114.81px;
+        height: 40px;
+        top: 24px;
+        left: 55px;
+        gap: 0px;
+    }
+
+    .header .title {
+        font-size: 24px;
+        color: #0056b3;
+    }
+
+    /* For large desktops or 1280x832 */
+@media screen and (min-width: 1280px) {
+    
+}
+
+/* For tablets (iPad or similar) */
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    
+}
+
+/* For mobile devices */
+@media screen and (max-width: 767px) {
+    .header {
+        justify-content: center;
+        width: 100%;
+        padding-left: 0;
+    }
+}

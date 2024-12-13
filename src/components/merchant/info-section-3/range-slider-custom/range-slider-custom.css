@@ -1,0 +1,107 @@
+.money-range-slider {
+    width: 100%;
+    font-family: Quicksand;
+}
+
+.slider-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.slider-header label {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 22px;
+    margin-top: 14px;
+}
+
+.range-values {
+    font-weight: bold;
+    color: #333;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: right;
+    margin: 0;
+}
+
+.slider-container {
+    position: relative;
+    height: 8px;
+}
+
+.slider-track {
+    position: absolute;
+    width: 100%;
+    height: 8px;
+    border-radius: 4px;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.slider {
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background: transparent;
+    appearance: none;
+    z-index: 2;
+    outline: none;
+    pointer-events: auto;
+}
+
+.slider-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+    height: 18px;
+    size: 12px;
+    line-height: 18px;
+    font-weight: 600;
+    text-align: right;
+}
+
+/* Slider Thumb */
+.slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #00A3E0;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.slider::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    background: #00A3E0;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slider::-ms-thumb {
+    width: 15px;
+    height: 15px;
+    background: #00A3E0;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Transparent default track to allow custom track underneath */
+.slider::-webkit-slider-runnable-track {
+    background: transparent;
+}
+
+.slider::-moz-range-track {
+    background: transparent;
+}
+
+.slider::-ms-track {
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+}

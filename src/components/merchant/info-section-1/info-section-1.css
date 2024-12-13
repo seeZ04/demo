@@ -1,0 +1,199 @@
+@font-face {
+    font-family: Quicksand;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.section-1 {
+    max-width: 1280px;
+    width: 100%;
+    position: relative;
+    padding: 0;
+    background: linear-gradient(127.28deg, #00A3E0 26.97%, #0068C8 100%);
+}
+
+.section-1 .landing-row {
+    padding-left: 56px;
+    padding-right: 56px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-1 .landing-row img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.section-1 .landing-row .section-content {
+    display: block;
+    gap: 32px;
+    z-index: 10;
+}
+
+.section-1 .landing-row .section-content .header-text {
+    width: 100%;
+    height: 56px;
+    font-family: Quicksand;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 56px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: #FFFFFF;
+    margin-top: 94px;
+}
+
+.section-1 .landing-row .section-content .body-text {
+    font-family: Quicksand;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+    color: #FFFFFF;
+    padding: 0;
+    margin: 0;
+}
+
+.section-1 .landing-row .section-content .list-item {
+    margin-top: 32px;
+    width: 373px;
+    padding: 8px 8px 8px 8px;
+    gap: 8px;
+    border-radius: 16px 16px 16px 16px;
+    background: #FFFFFF;
+    font-family: Quicksand;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+    text-align: left;
+}
+
+.section-1 .landing-row .section-content .list-item ul {
+    margin: 0;
+    padding: 0;
+}
+
+.section-1 .landing-row .section-content .list-item ul li {
+    padding: 8px 16px 8px 16px;
+    gap: 16px;
+    list-style: none;
+    align-items: center;
+    display: flex;
+}
+
+.section-1 .landing-row .section-content .list-item ul li img {
+    width: 32px;
+    height: 32px;
+}
+
+.section-1 .landing-row .section-content .register-button {
+    width: 175px;
+    height: 56px;
+    padding: 17px 32px 17px 32px;
+    gap: 12px;
+    border-radius: 8px;
+    border: 1.5px solid #00A3E0;
+    background: #FFFFFF;
+    margin-top: 32px;
+    font-family: Quicksand;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 22px;
+    text-align: center;
+    color: #00A3E0;
+}
+
+.eclipse {
+    position: absolute;
+    width: 100%;
+    /* Use 100% to ensure it spans the container */
+    height: 675px;
+    top: 195px;
+    z-index: 2;
+    background: radial-gradient(50% 40% at 70% 50%, #5BDAFE 0%, rgba(0, 142, 210, 0) 100%);
+}
+
+.info-pic {
+    padding-top: 21px;
+    z-index: 9;
+}
+
+.hidden-header {
+    display: flex;
+    align-items: center;
+    padding-left: 55px;
+    padding-top: 24px;
+    height: 40px;
+}
+
+.scroll-button {
+    text-align: center;
+    margin-top: 18px;
+    z-index: 3;
+    position: relative
+}
+
+.scroll-button img {
+    width: auto;
+    height: auto;
+    z-index: 3;
+}
+
+
+/* For large desktops or 1280x832 */
+@media screen and (min-width: 1280px) {}
+
+/* For tablets (iPad or similar) */
+@media screen and (max-width: 1024px) and (min-width: 768px) {}
+
+/* For mobile devices */
+@media screen and (max-width: 767px) {
+    .section-1 .landing-row {
+        flex-direction: column;
+        padding: 0%
+    }
+
+    .section-1 .landing-row .section-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .section-1 .landing-row .section-content .header-text {
+        text-align: center;
+    }
+
+    .section-1 .landing-row .section-content .body-text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .section-1 .landing-row .section-content .list-item {
+        width: 85%;
+    }
+
+    .info-pic {
+        display: flex;
+        justify-content: center;
+        margin-top: 5%;
+        width: 100%;
+    }
+
+    .section-1 .landing-row .section-content .register-button {
+        margin-top: 0;
+        width: 85%;
+    }
+
+    .eclipse {
+        background: none;
+    }
+
+    .scroll-button {
+        display: none;
+    }
+}

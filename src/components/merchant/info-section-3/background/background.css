@@ -1,0 +1,45 @@
+.background,
+.background * {
+  box-sizing: border-box;
+}
+
+.background {
+  height: 728px;
+  position: relative;
+}
+
+.rectangle-1477 {
+  background: var(--gradient-primary-gradient,
+      linear-gradient(127.28deg,
+        rgba(0, 163, 224, 1) 0%,
+        rgba(0, 104, 200, 1) 100%));
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+.mask-group {
+  width: 1280px;
+    height: inherit;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
+}
+
+/* For large desktops or 1280x832 */
+@media screen and (min-width: 1280px) {}
+
+/* For tablets (iPad or similar) */
+@media screen and (max-width: 1024px) and (min-width: 768px) {}
+
+/* For mobile devices */
+@media screen and (max-width: 767px) {
+  .mask-group {
+
+    margin-top: 55%;
+    margin-left: 20%;
+    position: static;
+  }
+}

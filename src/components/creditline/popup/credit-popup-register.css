@@ -1,0 +1,134 @@
+.credit-popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+    .credit-popup-overlay .popup {
+        width: 50%;
+        max-width: 896px;
+        height: fit-content;
+        padding: 40px;
+        z-index: 50;
+        background: #FFFFFF;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        align-items: center;
+        gap: 40px;
+        border-radius: 40px;
+    }
+
+    .credit-popup-overlay .title {
+        font-family: Quicksand;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 36px;
+        letter-spacing: -0.01em;
+        text-align: center;
+        color: #1A2F45;
+        gap: 8px;
+        display: grid;
+    }
+
+        .credit-popup-overlay .title .title-1 {
+            margin: 0;
+        }
+
+        .credit-popup-overlay .title .title-2 {
+            font-family: Quicksand;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 22px;
+            text-align: center;
+            color: #677483;
+        }
+
+
+    .credit-popup-overlay button {
+        width: 100%;
+        height: fit-content;
+        padding: 17px 32px 17px 32px;
+        gap: 12px;
+        border-radius: 8px;
+        background: #00A3E0;
+        font-family: Quicksand;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: -0.01em;
+        color: #FFFFFF;
+        border: none;
+    }
+
+    .credit-popup-overlay .popup-image {
+        width: fit-content;
+    }
+
+    .credit-popup-overlay .close-button {
+        text-align: right;
+        padding: 3%;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: transparent;
+        border: none;
+        font-size: 24px;
+        font-weight: bold;
+        color: #333;
+        cursor: pointer;
+        line-height: 1;
+        z-index: 9999;
+    }
+
+        .credit-popup-overlay .close-button:hover {
+            color: #ff0000;
+        }
+
+/* For tablets (iPad or similar) */
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    html {
+        font-size: 15px;
+    }
+
+    .credit-popup-overlay .popup {
+        text-align: center;
+        width: 60%;
+        height: fit-content;
+        margin: 0;
+        padding: 24px;
+        gap: 8px;
+        border-radius: 40px;
+    }
+}
+/* For mobile devices */
+@media screen and (max-width: 767px) {
+    html {
+        font-size: 14px;
+    }
+
+    .credit-popup-overlay .popup {
+        text-align: center;
+        width: 90%;
+        height: fit-content;
+        margin: 0;
+        padding: 24px;
+        gap: 8px;
+        border-radius: 40px;
+    }
+
+    .credit-popup-overlay .popup-image {
+        width: fit-content;
+    }
+}

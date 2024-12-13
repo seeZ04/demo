@@ -1,0 +1,178 @@
+body.no-scroll {
+    overflow: hidden;
+}
+
+/* Container styles */
+.custom-dropdown {
+    position: relative;
+    width: 100%;
+    font-family: Quicksand;
+}
+
+/* Header (selected value) styles */
+.dropdown-header {
+    border: 1px solid rgba(204, 209, 214, 1);
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    color: black;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 9px;
+    padding-top: 9px;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-bottom: 9px;
+}
+
+    .dropdown-header.open {
+        border-color: #007BFF;
+        box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+    }
+
+/* Text container: Label and selected option in a column */
+.dropdown-text {
+    display: flex;
+    flex-direction: column;
+    /* Stack label and selected option */
+}
+
+.dropdown-error {
+    color: red;
+    margin: 0;
+    margin-top: -5px;
+    width: 100%;
+}
+
+/* Label Styling */
+.dropdown-label {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    color: black;
+    font-family: Quicksand;
+}
+
+/* Selected Option Styling */
+.selected-option {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+    font-family: Quicksand;
+    margin-top: -4px;
+}
+    /* Selected Option Styling */
+    .selected {
+        color: black;
+    }
+
+    .not-selected {
+        color: #B3BAC1;
+    }
+
+/* Dropdown Arrow Container */
+.dropdown-arrow-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    /* Optional space between text and arrow */
+}
+
+/* Arrow styles */
+.dropdown-arrow {
+    margin-left: 8px;
+    font-size: 12px;
+    transition: transform 0.3s ease;
+}
+
+.dropdown-header.open .dropdown-arrow {
+    transform: rotate(-180deg);
+    /* Rotates arrow when open */
+}
+
+/* Dropdown List */
+.dropdown-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    margin-top: 0;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-bottom: 24px;
+    padding: 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    list-style: none;
+    max-height: 200px;
+    overflow-y: auto; /* Optional: Add scroll for long lists */
+}
+
+.dropdown-option {
+    padding: 10px;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+/* Highlighted Row */
+.highlight {
+    background-color: #F3FAFE; /* Light gray highlight */
+    color: #00A3E0;
+}
+
+/* Mobile Popup Styles */
+.dropdown-popup {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: white;
+    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    z-index: 1005;
+    height: fit-content;
+    max-height: 70vh;
+    border-radius: 16px 16px 0px 0px
+}
+
+.popup-list {
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+}
+
+.popup-option {
+    padding: 15px;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+}
+
+.popup-header {
+    margin-top: 5%;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+}
+
+.popup-label {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    font-family: Quicksand;
+}
+
+@media screen and (min-width: 768px) {
+    .dropdown-popup {
+        display: none;
+    }
+}

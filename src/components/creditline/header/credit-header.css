@@ -1,0 +1,40 @@
+.credit-header {
+    top: 0;
+    width: 160.74px;
+    height: 56px;
+    gap: 0px;
+    margin-top: 40px;
+    margin-left: 327px;
+    padding: 0;
+    position: fixed;
+}
+
+.credit-header img {
+        width: inherit;
+        height: inherit;
+    }
+
+
+/* For mobile devices */
+@media screen and (max-width: 767px) {
+
+    .credit-header {
+        width: 114.81px;
+        height: 40px;
+        gap: 0px;
+        margin: auto;
+        margin-top: 40px;
+    }
+}
+
+/* For mobile devices */
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+
+    .credit-header {
+        height: 60px;
+        width: 172px;
+        gap: 0px;
+        margin: auto;
+        margin-top: 40px;
+    }
+}

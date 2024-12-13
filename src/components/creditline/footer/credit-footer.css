@@ -1,0 +1,203 @@
+.credit-footer {
+    bottom: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 1);
+    font-family: Quicksand;
+    z-index: 12;
+    width: 930px;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    gap: 24px;
+    display: flex;
+    flex-direction: column;
+    color: #1A2F45;
+    padding-top: 24px;
+}
+
+    .credit-footer .footer-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+        .credit-footer .footer-content .contact-info {
+            flex: 1;
+        }
+
+        .credit-footer .footer-content .app-info {
+            flex: 1;
+        }
+
+        .credit-footer .footer-content .contact-info .info-row {
+            display: flex;
+            flex-direction: row;
+            margin: 0px;
+            padding: 0px;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+
+            .credit-footer .footer-content .contact-info .info-row p {
+                margin: 0px;
+                padding: 0px;
+                margin-left: 14px;
+            }
+
+            .credit-footer .footer-content .contact-info .info-row .info-row-mobile {
+                color: #00A3E0;
+            }
+
+        .credit-footer .footer-content .contact-info .company-info {
+            padding-bottom: 16px;
+        }
+
+            .credit-footer .footer-content .contact-info .company-info p {
+                font-family: Quicksand;
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 30px;
+                text-align: left;
+                margin-bottom: 0;
+                margin-top: 0;
+            }
+
+            .credit-footer .footer-content .contact-info .company-info a {
+                font-family: Quicksand;
+                font-size: 14px;
+                font-weight: 600;
+                line-height: 22px;
+                text-align: left;
+            }
+
+        .credit-footer .footer-content .app-info .app-group {
+            font-family: Quicksand;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 24px;
+            text-align: left;
+            gap: 16px;
+            display: grid;
+            text-align: center !important;
+        }
+
+        .credit-footer .footer-content .app-info .app-image {
+            /*flex-wrap: wrap;*/
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 8px;
+        }
+
+
+    .credit-footer .footer-image {
+        margin: auto;
+    }
+
+.link-image a {
+    display: inline-block;
+}
+.link-image:first-child {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.link-image:last-child {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+}
+
+@media screen and (max-width: 767px) {
+    .credit-footer {
+        bottom: 0;
+        background: rgba(255, 255, 255, 1);
+        font-family: Quicksand;
+        z-index: 12;
+        width: 90%;
+        height: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        gap: 24px;
+        display: flex;
+        flex-direction: column;
+        font-family: Quicksand;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: -0.01em;
+        text-align: left;
+        color: #1A2F45;
+    }
+
+        .credit-footer .footer-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-top: 40px;
+        }
+
+            .credit-footer .footer-content .app-info {
+                margin: 0;
+            }
+
+                .credit-footer .footer-content .app-info .app-group {
+                    text-align: center !important;
+                    padding-top: 40px;
+                }
+
+        .credit-footer .footer-image {
+            width: 100%;
+        }
+
+            .credit-footer .footer-image img {
+                width: inherit;
+            }
+
+        .credit-footer .footer-content .contact-info .company-info p {
+            font-family: Quicksand;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 24px;
+            letter-spacing: -0.01em;
+            text-align: left;
+        }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    .credit-footer {
+        margin-top: 24px;
+        width: 95%;
+        padding-left: 16px;
+        padding-right: 16px;
+        color: #1A2F45;
+    }
+
+        .credit-footer .footer-content .contact-info .company-info p {
+            font-family: Quicksand;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 24px;
+            letter-spacing: -0.01em;
+            text-align: left;
+        }
+}
+
+@media screen and (max-width: 374px) {
+    .credit-footer .footer-content .app-info .app-image {
+        flex-wrap: wrap;
+    }
+    .link-image:first-child {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+    }
+
+    .link-image:last-child {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,295 @@
+﻿.credit-loan-form {
+    width: 465px;
+    height: 536px;
+    padding: 40px 24px 40px 24px;
+    gap: 24px;
+    border-radius: 24px 24px 24px 24px;
+    background: linear-gradient(127.28deg, #00A3E0 26.97%, #0068C8 100%);
+    box-shadow: 0px 1px 2px -1px rgba(16, 24, 40, 0.1);
+    box-shadow: 0px 1px 3px 0px rgba(16, 24, 40, 0.1);
+    top: 0px;
+    display: grid;
+    height: fit-content;
+    /*margin-left: 10%;*/
+    margin-bottom: 24px;
+    z-index: 9;
+}
+
+    .credit-loan-form .text-1 {
+        height: fit-content;
+        gap: 0px;
+        font-family: Quicksand;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 30px;
+        letter-spacing: -0.01em;
+        text-align: left;
+        color: rgba(255, 255, 255, 1);
+    }
+
+    .credit-loan-form .text-2 {
+        width: 100%;
+        height: 48px;
+        gap: 0px;
+        font-family: Quicksand;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 48px;
+        letter-spacing: -0.02em;
+        text-align: left;
+        color: rgba(255, 255, 255, 1);
+    }
+
+    .credit-loan-form .group-button {
+        width: 100%;
+        gap: 8px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+.button-1 {
+    width: fit-content;
+    height: 36px;
+    padding-right: 8px;
+    gap: 8px;
+    border-radius: 200px 200px 200px 200px;
+    background: rgba(255, 255, 255, 0.24);
+    backdrop-filter: blur(8px);
+    display: flex;
+    text-align: left;
+    align-items: center;
+    margin: 0;
+    color: rgba(255, 255, 255, 1);
+}
+
+    .button-1 p {
+        margin: 0;
+        font-family: Quicksand;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 22px;
+        text-align: left;
+    }
+
+    .button-1 img {
+        width: 36px;
+        height: 36px;
+    }
+
+.credit-loan-form .info-input {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 9px;
+    padding-top: 9px;
+    border-radius: 8px 8px 8px 8px;
+    border: 1px solid rgba(204, 209, 214, 1);
+    margin-left: 0px;
+    margin-right: 0px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 9px;
+    width: 100%;
+    height: 60px;
+    padding: 8px 16px 8px 16px;
+    border-radius: 8px 8px 8px 8px;
+    border: 1px 1px 1px 1px;
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(204, 209, 214, 1);
+    height: fit-content;
+}
+
+.credit-loan-form .button {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.credit-loan-form .submit-btn {
+    width: 100%;
+    height: 60px;
+    padding: 17px 32px 17px 32px;
+    gap: 12px;
+    border-radius: 8px 8px 8px 8px;
+    background: rgba(0, 163, 224, 1);
+    margin: 0;
+    font-family: Quicksand;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    border: none;
+    margin-bottom: 0;
+}
+
+.credit-loan-form .button p {
+    width: 100%;
+    height: 30px;
+    gap: 0px;
+    font-family: Quicksand;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15px;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+}
+
+    .credit-loan-form .button p span {
+        text-decoration: underline;
+    }
+
+.credit-loan-form .info-input label {
+    font-family: Quicksand;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    text-align: left;
+}
+
+.credit-loan-form .info-input input {
+    font-family: Quicksand;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+    border: none;
+    outline: none;
+    border-color: inherit;
+}
+
+    .credit-loan-form .info-input input::placeholder {
+        color: rgba(200, 200, 200, 1);
+    }
+
+.credit-loan-form .input-error {
+    border-color: red;
+}
+
+.credit-loan-form .info-input .error-text {
+    color: red;
+    font-size: 12px;
+    font-family: Quicksand;
+}
+
+@media screen and (max-width: 767px) {
+    .credit-loan-form {
+        width: 100%;
+        height: fit-content;
+        gap: 24px;
+        padding: 40px 16px 40px 16px;
+        border-radius: 24px 24px 24px 24px;
+        background: linear-gradient(127.28deg, #00A3E0 26.97%, #0068C8 100%);
+        box-shadow: 0px 1px 2px -1px rgba(16, 24, 40, 0.1);
+        box-shadow: 0px 1px 3px 0px rgba(16, 24, 40, 0.1);
+        display: grid;
+        margin: auto;
+        z-index: 9;
+    }
+
+        .credit-loan-form .group-button {
+            display: grid;
+            width: fit-content;
+            height: fit-content;
+        }
+
+        .credit-loan-form .info-input {
+            display: grid;
+            width: 100%;
+            width: 100%;
+        }
+
+        .credit-loan-form .button {
+            display: grid;
+        }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    .credit-loan-form {
+        width: 94%;
+        height: fit-content;
+        gap: 24px;
+        border-radius: 24px 24px 24px 24px;
+        background: linear-gradient(127.28deg, #00A3E0 26.97%, #0068C8 100%);
+        box-shadow: 0px 1px 2px -1px rgba(16, 24, 40, 0.1);
+        box-shadow: 0px 1px 3px 0px rgba(16, 24, 40, 0.1);
+        display: grid;
+        margin: auto;
+        z-index: 9;
+    }
+}
+
+
+.pdf-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #f3f3f3;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.pdf-content {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.pdf-container nav {
+    width: 100%;
+}
+
+.nav-button {
+    gap: 2%;
+    align-content: center;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+    .nav-button .previous {
+        text-align: right;
+        width: 100%;
+    }
+
+    .nav-button .next {
+        width: 100%;
+        text-align: left;
+    }
+
+    .nav-button button {
+        gap: 12px;
+        border-radius: 8px 8px 8px 8px;
+        background: rgba(0, 163, 224, 1);
+        margin: 0;
+        font-family: Quicksand;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: -0.01em;
+        text-align: center;
+        color: rgba(255, 255, 255, 1);
+        border: none;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+        .nav-button button:disabled,
+        button[disabled] {
+            background: rgba(200, 200, 200, 1);
+        }
+
+.canvas-panel {
+    width: 100% !important;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    overflow-y: auto;
+    height: 600px;
+}
+
+canvas {
+    object-fit: contain;
+}

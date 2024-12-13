@@ -1,0 +1,100 @@
+@font-face {
+    font-family: Quicksand;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.section-2 {
+    width: 100%;
+    background-color: #fff;
+}
+
+.section-header {
+    top: 896px;
+    left: 353px;
+    gap: 0px;
+    font-family: Quicksand;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #00A3E0;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.section-2-row {
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-2-row .section-2-content {
+    width: 80%;
+    gap: 48px;
+    margin: 0;
+    padding: 0;
+}
+
+.section-2-row .section-2-content .section-2-content-header {
+    margin: 0;
+    padding: 0;
+    font-family: Quicksand;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: left;
+}
+
+.section-2-row .section-2-content ul {
+    margin-left: 0px;
+    padding-left: 24px;
+    margin-bottom: 48px;
+}
+
+.section-2-row .section-2-content ul li {
+    font-family: Quicksand;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+}
+
+.section-2-row .section-2-content p {
+    font-family: Quicksand;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+}
+
+.section-2-row .info-section-2-pic {
+    width: 75%;
+    margin-right: 5%;
+}
+
+.section-2-row .info-section-2-pic img {
+    width: 100%;
+    display: block;
+}
+
+/* For large desktops or 1280x832 */
+@media screen and (min-width: 1280px) {}
+
+/* For tablets (iPad or similar) */
+@media screen and (max-width: 1024px) and (min-width: 768px) {}
+
+/* For mobile devices */
+@media screen and (max-width: 767px) {
+    .section-header {
+        margin: 6%;
+    }
+
+    .section-2-row {
+        flex-direction: column;
+    }
+}

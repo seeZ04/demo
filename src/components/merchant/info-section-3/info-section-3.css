@@ -1,0 +1,163 @@
+@font-face {
+    font-family: Quicksand;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.section-3 .bounty-image {
+    position: absolute;
+    float: right;
+    right: 0;
+    top: 80%;
+    padding-right: calc(50% - 580px);
+}
+
+    .section-3 .bounty-image img {
+        display: block;
+        width: inherit;
+    }
+
+.section-3 .section-3-background {
+    z-index: 1;
+    position: absolute;
+}
+
+.section-3 .section-3-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+    .section-3 .section-3-row .section-3-content {
+        width: 100%;
+        z-index: 1;
+        margin-top: -12%;
+        height: fit-content;
+        margin-bottom: 5%;
+    }
+
+        .section-3 .section-3-row .section-3-content .section-3-content-header {
+            width: 100%;
+            color: #fff;
+            font-family: Quicksand;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 36px;
+            letter-spacing: -0.01em;
+            text-align: left;
+            margin-bottom: 32px;
+        }
+
+        .section-3 .section-3-row .section-3-content .section-3-content-row {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            gap: 16px;
+            align-items: center;
+        }
+
+            .section-3 .section-3-row .section-3-content .section-3-content-row .circle-number {
+                width: 32px;
+                height: 32px;
+                top: 4px;
+                left: 4px;
+                min-width: 32px;
+                min-height: 32px;
+                background-color: #fff;
+                border-radius: 50%;
+                color: #00A3E0;
+                font-family: Quicksand;
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 30px;
+                text-align: center;
+                align-content: center;
+            }
+
+            .section-3 .section-3-row .section-3-content .section-3-content-row .text-content {
+                align-content: center;
+                height: 48px;
+                margin-left: 16px;
+                font-family: Quicksand;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 24px;
+                text-align: left;
+                color: #fff;
+                margin-right: 20px;
+                height: fit-content;
+            }
+
+        .section-3 .section-3-row .section-3-content .link {
+            border: 1px solid #CCEDF9;
+            width: 32px;
+            top: 0px;
+            left: 1px;
+            transform: rotate(-90deg);
+            margin-top: 24px;
+            margin-bottom: 24px;
+        }
+
+
+/* For large desktops or 1280x832 */
+@media screen and (min-width: 1280px) {
+    .section-3 .bounty-image {
+        z-index: 14;
+        top: 78%;
+    }
+}
+
+/* For tablets (iPad or similar) */
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .section-3-content {
+        margin-left: 4%;
+    }
+
+    .section-3 .bounty-image {
+        top: 82%;
+    }
+
+    .section-3 .bounty-image img {
+        width: 80%;
+    }
+}
+
+/* For mobile devices */
+@media screen and (max-width: 767px) {
+
+    .section-3 .section-3-row {
+        margin: 0;
+        padding-bottom: 5%;
+        flex-direction: column-reverse;
+        margin-top: 0;
+    }
+
+        .section-3 .section-3-row .section-3-content {
+            margin-top: 0;
+            padding: 5%;
+        }
+
+            .section-3 .section-3-row .section-3-content .section-3-content-header {
+                text-align: center;
+            }
+
+    .section-3 .section-3-body {
+        display: flex;
+        flex-direction: column;
+        background: radial-gradient(150% 120% at 15% 35%, #5BDAFE -30%, rgba(0, 142, 210, 0) 80%);
+        align-items: center;
+    }
+
+    .section-3 .bounty-image {
+        position: relative;
+    }
+}
+/* For large desktops or 1280x832 */
+@media screen and (min-width: 5000px) {
+    .section-3 .bounty-image {
+        top: inherit;
+    }
+}

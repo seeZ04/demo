@@ -1,0 +1,162 @@
+.loan-form {
+    width: 90%;
+    border-radius: 16px 16px 16px 16px;
+    background-color: #fff;
+    margin-left: 8%;
+    margin-right: 8%;
+    z-index: 13;
+    font-family: Quicksand;
+}
+
+    .loan-form .form-group {
+        margin-bottom: 0;
+        position: relative;
+    }
+
+    .loan-form .loan-input {
+        gap: 8px;
+        margin-left: 24px;
+        margin-right: 24px;
+        margin-bottom: 24px;
+    }
+
+    .loan-form .range-input {
+        padding: 5%;
+    }
+
+    .loan-form .loan-input input {
+        width: 100%;
+        height: 8px;
+        background: rgba(0, 163, 224, 1);
+        color: rgba(204, 237, 249, 1);
+    }
+
+
+    .loan-form .info-input {
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-bottom: 9px;
+        padding-top: 9px;
+        border-radius: 8px 8px 8px 8px;
+        border: 1px solid rgba(204, 209, 214, 1);
+        margin-left: 24px;
+        margin-right: 24px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 9px;
+    }
+
+        .loan-form .info-input .error-text {
+            color: red;
+            font-size: 12px;
+            font-family: Quicksand;
+        }
+
+.input-error {
+    border-color: red;
+}
+
+.loan-form .info-input label {
+    font-family: Quicksand;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    text-align: left;
+}
+
+.loan-form .info-input input {
+    font-family: Quicksand;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+    border: none;
+    outline: none;
+    border-color: inherit;
+}
+
+    .loan-form .info-input input::placeholder {
+        color: rgba(200, 200, 200, 1);
+    }
+
+.loan-form .note {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 8px;
+    padding-top: 4px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 24px;
+    margin-right: 24px;
+    display: flex;
+    flex-direction: column;
+    font-family: Quicksand;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+    text-align: left;
+    color: rgba(255, 143, 31, 1);
+}
+
+.loan-form .button {
+    margin-right: 24px;
+    margin-left: 24px;
+}
+
+.loan-form .submit-btn {
+    width: 100%;
+    height: 56px;
+    border-radius: 8px 8px 8px 8px;
+    background: rgba(0, 163, 224, 1);
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 24px;
+    border-color: #fff;
+}
+    
+.blur-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1002;
+}
+
+.loading-spinner {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px 20px;
+    border-radius: 8px;
+    z-index: 9999;
+    font-family: Quicksand;
+}
+
+@keyframes c1 {
+    to {
+        opacity: 0
+    }
+}
+
+/* For large desktops or 1280x832 */
+@media screen and (min-width: 1280px) {
+}
+
+/* For tablets (iPad or similar) */
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    .loan-form {
+        z-index: 13;
+    }
+}
+
+/* For mobile devices */
+@media screen and (max-width: 767px) {
+}

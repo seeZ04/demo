@@ -1,0 +1,144 @@
+.footer {
+    width: 100%;
+    background: rgba(255, 255, 255, 1);
+    font-family: Quicksand;
+    z-index: 12;
+}
+
+    .footer .button-scroll-top {
+        position: absolute;
+        z-index: 999;
+        float: right;
+        right: 0;
+        top: 87%;
+        padding-right: calc(50% - 650px);
+    }
+
+    .footer .footer-content {
+        padding-top: 5%;
+        padding-bottom: 5%;
+        margin-left: 5%;
+        margin-right: 5%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+        .footer .footer-content .contact-info {
+            padding-bottom: 16px;
+        }
+
+            .footer .footer-content .contact-info .info-row {
+                display: flex;
+                flex-direction: row;
+                margin: 0px;
+                padding: 0px;
+                align-items: center;
+                margin-bottom: 8px;
+            }
+
+                .footer .footer-content .contact-info .info-row p {
+                    margin: 0px;
+                    padding: 0px;
+                    margin-left: 14px;
+                }
+
+            .footer .footer-content .contact-info .phone-number {
+                color: #00A3E0;
+            }
+
+            .footer .footer-content .contact-info .company-info {
+                padding-bottom: 16px;
+            }
+
+                .footer .footer-content .contact-info .company-info p {
+                    font-family: Quicksand;
+                    font-size: 20px;
+                    font-weight: 700;
+                    line-height: 30px;
+                    text-align: left;
+                    margin-bottom: 0;
+                    margin-top: 0;
+                }
+
+                .footer .footer-content .contact-info .company-info a {
+                    font-family: Quicksand;
+                    font-size: 14px;
+                    font-weight: 600;
+                    line-height: 22px;
+                    text-align: left;
+                }
+
+        .footer .footer-content .app-info .app-group {
+            font-family: Quicksand;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 24px;
+            text-align: left;
+        }
+
+            .footer .footer-content .app-info .app-group p {
+                margin-top: 0px;
+            }
+
+        .footer .footer-content .app-info .app-image {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .footer .footer-content .app-info {
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+
+            .footer .footer-content .app-info .app-image .qr-image {
+                display: flex;
+                flex-direction: column;
+                margin-right: 8px;
+                gap: 8px;
+            }
+
+.link-image a {
+    display: inline-block;
+}
+
+
+/* For large desktops or 1280x832 */
+@media screen and (min-width: 1280px) {
+    .footer .button-scroll-top {
+        top: 86%;
+    }
+}
+
+/* For tablets (iPad or similar) */
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    .footer .button-scroll-top {
+        top: 88%;
+    }
+
+    .footer-content .app-info .app-group {
+        text-align: left !important;
+    }
+}
+
+/* For mobile devices */
+@media screen and (max-width: 767px) {
+    .footer .footer-content {
+        flex-direction: column;
+    }
+
+    .footer .button-scroll-top {
+        top: 94%;
+    }
+
+    .footer-content .app-info .app-group {
+        text-align: left !important;
+    }
+}
+
+@media screen and (min-width: 5000px) {
+    .footer .button-scroll-top {
+        top: inherit;
+    }
+}
